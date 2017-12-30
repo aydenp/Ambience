@@ -29,4 +29,3 @@ Feel free to contribute to the source code of Ambience to make it something even
 ## License
 
 This project is licensed under the [MIT license](/LICENSE). Please make sure you comply with its terms while using it in any way.
-# Ambience
