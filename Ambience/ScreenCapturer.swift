@@ -14,12 +14,12 @@ class ScreenCapturer {
     private init() {}
     
     /// Take a screenshot and return it
-    private func getScreenshot() -> CGImage? {
+    func getScreenshot() -> CGImage? {
         return CGWindowListCreateImage(.infinite, .optionOnScreenOnly, kCGNullWindowID, [])
     }
     
     /// Take a screenshot and return its average colour
-    private func getScreenAverageColour() -> NSColor? {
+    func getScreenAverageColour() -> NSColor? {
         guard let screenshot = getScreenshot() else { return nil }
         
         // Inspired by https://stackoverflow.com/a/32445855
@@ -38,6 +38,6 @@ class ScreenCapturer {
         context.render(outputImage, toBitmap: &bitmap, rowBytes: 4, bounds: CGRect(origin: .zero, size: outputExtent.size), format: kCIFormatRGBA8, colorSpace: CGColorSpaceCreateDeviceRGB())
         
         // Compute NSColor result
-        return NSColor(red: CGFloat(bitmap[0] / 255), green: CGFloat(bitmap[1] / 255), blue: CGFloat(bitmap[2] / 255), alpha: CGFloat(bitmap[3] / 255))
+        return NSColor(red: CGFloat(bitmap[0]) / 255, green: CGFloat(bitmap[1]) / 255, blue: CGFloat(bitmap[2]) / 255, alpha: CGFloat(bitmap[3]) / 255)
     }
 }

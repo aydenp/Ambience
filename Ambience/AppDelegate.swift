@@ -30,6 +30,10 @@ class AppDelegate: NSObject, NSApplicationDelegate, StatusMenuManagerDelegate {
             .text(title: "Quit Ambience", action: { NSApplication.shared.terminate($0) }, keyEquivalent: "q")
         ])
         statusItem.menu = menu
+        
+        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { _ in
+            print(ScreenCapturer.shared.getScreenAverageColour())
+        }
     }
     
     // MARK: - Status Menu Manager Delegate

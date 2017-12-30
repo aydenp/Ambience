@@ -14,7 +14,7 @@ A simple Mac application runs, and at an interval specified by you, will notify 
 
 1. Open the Xcode project (Ambience.xcodeproj) in Xcode.
 
-2. Change the app bundle identifier and group identifiers to your own values, and change the team to your own.
+2. Change the app bundle identifier and team to your own.
 
 3. Build the app and run it on your Mac.
 
