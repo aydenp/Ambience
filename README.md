@@ -2,6 +2,8 @@
 
 Change the colour of your Hue lights (including light strips) based on the content of your Mac's display.
 
+**UNFINISHED WITH DEVELOPMENT PAUSED:** Development on this project will resume when I get the necessary hardware to test with and fully complete it.
+
 ## Why would I want this?
 
 It can make some setups look really cool. For example, if you have a Hue lightstrip behind a desk with your iMac on it, this can look amazing while in use.
