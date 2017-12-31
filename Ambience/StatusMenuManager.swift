@@ -14,6 +14,7 @@ class StatusMenuManager {
         case settingBool(title: String, key: String, initial: Bool)
         case settingTimeInterval(title: String, key: String, initial: TimeInterval, list: [TimeInterval])
         case text(title: String, action: ((NSMenuItem) -> ())?, keyEquivalent: String)
+        case submenu(title: String, submenu: NSMenu)
         case separator
         
         func menuItem(for manager: StatusMenuManager) -> NSMenuItem {
@@ -37,6 +38,10 @@ class StatusMenuManager {
                     item.target = manager
                     return item
                 }.forEach { submenu.addItem($0) }
+                let item = NSMenuItem(title: title, action: nil, keyEquivalent: "")
+                item.submenu = submenu
+                return item
+            case .submenu(let title, let submenu):
                 let item = NSMenuItem(title: title, action: nil, keyEquivalent: "")
                 item.submenu = submenu
                 return item
@@ -92,12 +97,12 @@ class StatusMenuManager {
     }
     
     private func handleSettingChange(with key: String) {
-        delegate?.menuSettingChanged(with: key)
+        delegate?.statusMenuManager(self, changedMenuSettingWithKey: key)
         reloadMenuItems()
     }
 }
 
 protocol StatusMenuManagerDelegate: class {
     /// Called when a setting represented in the menu changes is changed.
-    func menuSettingChanged(with key: String)
+    func statusMenuManager(_ manager: StatusMenuManager, changedMenuSettingWithKey key: String)
 }

@@ -10,6 +10,14 @@
 		C3801E8F1FF836F70051BBDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3801E8E1FF836F70051BBDE /* AppDelegate.swift */; };
 		C3801E911FF836F70051BBDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3801E901FF836F70051BBDE /* Assets.xcassets */; };
 		C3801E9D1FF8391E0051BBDE /* ScreenCapturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3801E9C1FF8391E0051BBDE /* ScreenCapturer.swift */; };
+		C39B21D61FF85CCB00E70D78 /* HueSDK_OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39B21D51FF85CCB00E70D78 /* HueSDK_OSX.framework */; };
+		C39B21E71FF8635700E70D78 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C39B21D91FF8635700E70D78 /* DDAbstractDatabaseLogger.m */; };
+		C39B21E81FF8635700E70D78 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C39B21DB1FF8635700E70D78 /* DDASLLogger.m */; };
+		C39B21E91FF8635700E70D78 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C39B21DD1FF8635700E70D78 /* DDFileLogger.m */; };
+		C39B21EA1FF8635700E70D78 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = C39B21DF1FF8635700E70D78 /* DDLog.m */; };
+		C39B21EB1FF8635700E70D78 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C39B21E11FF8635700E70D78 /* DDTTYLogger.m */; };
+		C39B21EC1FF8635700E70D78 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C39B21E41FF8635700E70D78 /* ContextFilterLogFormatter.m */; };
+		C39B21ED1FF8635700E70D78 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C39B21E61FF8635700E70D78 /* DispatchQueueLogFormatter.m */; };
 		C3F3C8421FF83F520009FCD3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F3C8411FF83F520009FCD3 /* main.swift */; };
 		C3F3C8441FF844A60009FCD3 /* StatusMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F3C8431FF844A60009FCD3 /* StatusMenuManager.swift */; };
 /* End PBXBuildFile section */
@@ -21,6 +29,22 @@
 		C3801E951FF836F70051BBDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3801E961FF836F70051BBDE /* Ambience.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ambience.entitlements; sourceTree = "<group>"; };
 		C3801E9C1FF8391E0051BBDE /* ScreenCapturer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenCapturer.swift; sourceTree = "<group>"; };
+		C39B21D21FF85BEA00E70D78 /* Ambience-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ambience-Bridging-Header.h"; sourceTree = "<group>"; };
+		C39B21D51FF85CCB00E70D78 /* HueSDK_OSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HueSDK_OSX.framework; path = ../HueSDK_OSX.framework; sourceTree = "<group>"; };
+		C39B21D81FF8635700E70D78 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		C39B21D91FF8635700E70D78 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		C39B21DA1FF8635700E70D78 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		C39B21DB1FF8635700E70D78 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		C39B21DC1FF8635700E70D78 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		C39B21DD1FF8635700E70D78 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		C39B21DE1FF8635700E70D78 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		C39B21DF1FF8635700E70D78 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		C39B21E01FF8635700E70D78 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		C39B21E11FF8635700E70D78 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		C39B21E31FF8635700E70D78 /* ContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		C39B21E41FF8635700E70D78 /* ContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		C39B21E51FF8635700E70D78 /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		C39B21E61FF8635700E70D78 /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
 		C3F3C8411FF83F520009FCD3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C3F3C8431FF844A60009FCD3 /* StatusMenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -30,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C39B21D61FF85CCB00E70D78 /* HueSDK_OSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,8 +87,48 @@
 				C3801E9C1FF8391E0051BBDE /* ScreenCapturer.swift */,
 				C3F3C8431FF844A60009FCD3 /* StatusMenuManager.swift */,
 				C3F3C8411FF83F520009FCD3 /* main.swift */,
+				C39B21D21FF85BEA00E70D78 /* Ambience-Bridging-Header.h */,
+				C39B21EE1FF8640F00E70D78 /* Hue SDK */,
 			);
 			path = Ambience;
+			sourceTree = "<group>";
+		};
+		C39B21D71FF8635700E70D78 /* Lumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				C39B21D81FF8635700E70D78 /* DDAbstractDatabaseLogger.h */,
+				C39B21D91FF8635700E70D78 /* DDAbstractDatabaseLogger.m */,
+				C39B21DA1FF8635700E70D78 /* DDASLLogger.h */,
+				C39B21DB1FF8635700E70D78 /* DDASLLogger.m */,
+				C39B21DC1FF8635700E70D78 /* DDFileLogger.h */,
+				C39B21DD1FF8635700E70D78 /* DDFileLogger.m */,
+				C39B21DE1FF8635700E70D78 /* DDLog.h */,
+				C39B21DF1FF8635700E70D78 /* DDLog.m */,
+				C39B21E01FF8635700E70D78 /* DDTTYLogger.h */,
+				C39B21E11FF8635700E70D78 /* DDTTYLogger.m */,
+				C39B21E21FF8635700E70D78 /* Extensions */,
+			);
+			path = Lumberjack;
+			sourceTree = "<group>";
+		};
+		C39B21E21FF8635700E70D78 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C39B21E31FF8635700E70D78 /* ContextFilterLogFormatter.h */,
+				C39B21E41FF8635700E70D78 /* ContextFilterLogFormatter.m */,
+				C39B21E51FF8635700E70D78 /* DispatchQueueLogFormatter.h */,
+				C39B21E61FF8635700E70D78 /* DispatchQueueLogFormatter.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C39B21EE1FF8640F00E70D78 /* Hue SDK */ = {
+			isa = PBXGroup;
+			children = (
+				C39B21D51FF85CCB00E70D78 /* HueSDK_OSX.framework */,
+				C39B21D71FF8635700E70D78 /* Lumberjack */,
+			);
+			path = "Hue SDK";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +163,7 @@
 				TargetAttributes = {
 					C3801E8A1FF836F70051BBDE = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -138,8 +204,15 @@
 			files = (
 				C3801E8F1FF836F70051BBDE /* AppDelegate.swift in Sources */,
 				C3801E9D1FF8391E0051BBDE /* ScreenCapturer.swift in Sources */,
+				C39B21E81FF8635700E70D78 /* DDASLLogger.m in Sources */,
+				C39B21EC1FF8635700E70D78 /* ContextFilterLogFormatter.m in Sources */,
+				C39B21EB1FF8635700E70D78 /* DDTTYLogger.m in Sources */,
+				C39B21E91FF8635700E70D78 /* DDFileLogger.m in Sources */,
+				C39B21EA1FF8635700E70D78 /* DDLog.m in Sources */,
 				C3F3C8441FF844A60009FCD3 /* StatusMenuManager.swift in Sources */,
+				C39B21ED1FF8635700E70D78 /* DispatchQueueLogFormatter.m in Sources */,
 				C3F3C8421FF83F520009FCD3 /* main.swift in Sources */,
+				C39B21E71FF8635700E70D78 /* DDAbstractDatabaseLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,14 +329,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Ambience/Ambience.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 6N2S3YHMFB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Ambience",
+				);
 				INFOPLIST_FILE = Ambience/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = madebyayden.macos.Ambience;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ambience/Ambience-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -272,14 +353,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Ambience/Ambience.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 6N2S3YHMFB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Ambience",
+				);
 				INFOPLIST_FILE = Ambience/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = madebyayden.macos.Ambience;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ambience/Ambience-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
