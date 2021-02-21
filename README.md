@@ -1,8 +1,12 @@
+# Hello
+
+So this never got finished... but, you can check out [ambience-lite-lifx](https://github.com/aydenp/ambience-lite-lifx) if you have Lifx lights.
+
+---
+
 # Ambience
 
 Change the colour of your Hue lights (including light strips) based on the content of your Mac's display.
-
-**UNFINISHED WITH DEVELOPMENT PAUSED:** Development on this project will resume when I get the necessary hardware to test with and fully complete it.
 
 ## Why would I want this?
 
